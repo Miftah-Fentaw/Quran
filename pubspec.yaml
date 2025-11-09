@@ -1,0 +1,43 @@
+name: islamic
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  cupertino_icons: ^1.0.8
+  flutter:
+    sdk: flutter
+  flutter_native_splash: ^2.4.7
+  icons_launcher: ^3.0.3
+  url_launcher: ^6.3.2
+
+icons_launcher:
+  image_path: "assets/Quran.png"
+  platforms:
+    android:
+      enable: true
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/Quran.png
+  android_12:
+    image: assets/Quran.png
+    icon_background_color: "#ffffff"
+
+dev_dependencies:
+
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/quran/
