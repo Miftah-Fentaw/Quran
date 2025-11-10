@@ -25,31 +25,41 @@ class _HomePageState extends State<HomePage> {
               ),
               child: Column(
                 children: [
-                  Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(14),
-                        child: Image.asset(
-                          'assets/hero.png',
-                          width: double.infinity,
-                          height: 300,
-                          fit: BoxFit.cover,
-                        ),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      top: 60,
+                      left: 20,
+                      right: 20,
+                      bottom: 20,
+                    ),
+                    child: Text(
+                      "HUDA AL-ISLAM\n"
+                      "الْهُدَى الْإِسْلَامِيَّة",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 26,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: "Amiri",
                       ),
-                      const Text(
-                        "HUDA AL-ISLAM\n"
-                        "اقرأ القرآن",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 26,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: "Amiri",
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
+
+                  Text(
+                    '"اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ"\n'
+                    "(Read in the name of your Lord who created, He created man from a clinging substance.)\n"
+                    '(AL-ALAQ 96:1-2)'
+                    ,textAlign: TextAlign.center,
+                    overflow: TextOverflow.visible,
+                    style: TextStyle(
+                      fontSize: 22,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                      fontFamily: "Amiri",
+                      height: 1.6,
+                    ),
+                  ),
+
                   const SizedBox(height: 10),
                   Padding(
                     padding: EdgeInsets.all(10),
@@ -135,7 +145,7 @@ class _HomePageState extends State<HomePage> {
                       childAspectRatio: 3 / 2,
                       children: [
                         GestureDetector(
-                          onTap: (){
+                          onTap: () {
                             Navigator.pushNamed(context, '/contact');
                           },
                           child: ClipRRect(
@@ -152,7 +162,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                         GestureDetector(
-                          onTap: (){
+                          onTap: () {
                             Navigator.pushNamed(context, '/about');
                           },
                           child: ClipRRect(

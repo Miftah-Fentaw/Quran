@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 import 'package:flutter/material.dart';
 import 'package:islamic/surah_list.dart';
 import 'package:islamic/Reading_Screen.dart';
@@ -18,7 +10,7 @@ class SurahListScreen extends StatefulWidget {
 }
 
 class _SurahListScreenState extends State<SurahListScreen> {
-  bool isDarkMode = false;
+  bool isDarkMode = true;
 
   @override
   Widget build(BuildContext context) {

@@ -17,7 +17,7 @@ class ReadQuran extends StatefulWidget {
 }
 
 class _ReadQuranState extends State<ReadQuran> {
-  bool isDarkMode = false;
+  bool isDarkMode = true;
   bool showPanel = false;
   late PageController pageController;
   int currentPageIndex = 0;
