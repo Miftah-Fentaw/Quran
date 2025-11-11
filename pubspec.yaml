@@ -1,6 +1,6 @@
 name: islamic
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 
 version: 1.0.0+1
 
@@ -29,13 +29,11 @@ flutter_native_splash:
     icon_background_color: "#ffffff"
 
 dev_dependencies:
-
   flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
 
 flutter:
-
   uses-material-design: true
 
   assets:
