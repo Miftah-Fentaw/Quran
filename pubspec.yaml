@@ -12,7 +12,11 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_native_splash: ^2.4.7
+  gal: ^2.3.2
   icons_launcher: ^3.0.3
+  path_provider: ^2.1.5
+  screenshot: ^3.0.0
+  shared_preferences: ^2.5.4
   url_launcher: ^6.3.2
 
 icons_launcher:
