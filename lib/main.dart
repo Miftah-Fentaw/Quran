@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:islamic/Surah_list_screen.dart';
 import 'package:islamic/about.dart';
-import 'package:islamic/contact.dart';
 import 'package:islamic/theme_manager.dart';
 import 'package:islamic/bookmark_manager.dart';
 
@@ -35,7 +34,6 @@ class QuranApp extends StatelessWidget {
           ),
           routes: {
             '/': (context) => const SurahListScreen(),
-            '/contact': (context) => const ContactPage(),
             '/about': (context) => const AboutPage(),
           },
         );
